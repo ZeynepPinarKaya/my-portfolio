@@ -28,6 +28,22 @@ a[class^='btn-']:hover,
 input[class^='btn-']:hover {
   background-color: #94DDFF; }
 
+.bg-main {
+  background: #94DDFF;
+  color: #000; }
+
+.bg-dark {
+  background: #2c2c31;
+  color: #fff; }
+
+.bg-light {
+  background: #f4f4f4;
+  color: #000; }
+
+.bg-medium {
+  background: #bbb8bd;
+  color: #000; }
+
 .lead {
   font-size: 1.5rem;
   margin-bottom: 2rem; }
@@ -133,6 +149,12 @@ img {
       font-size: 4rem;
       line-height: 1.5; }
 
+#header-inner {
+  background: url("../img/showcase.jpg") no-repeat 20% 30%/cover;
+  height: 5.5rem;
+  border-bottom: 3px solid #94DDFF;
+  color: #fff; }
+
 #home-a .specials {
   margin-top: 3rem;
   display: grid;
@@ -169,6 +191,7 @@ img {
     right: 0;
     font-size: 30px;
     background: #94DDFF;
+    color: #000;
     border-radius: 50%;
     height: 15px;
     width: 15px;
@@ -187,9 +210,75 @@ img {
     position: relative;
     transition: all 1s; }
     #home-c .process-icon:hover {
-      background-color: #94DDFF; }
+      background-color: #94DDFF;
+      color: #000; }
       #home-c .process-icon:hover .process-step {
-        background-color: #2c2c31; }
+        background-color: #2c2c31;
+        color: #fff; }
+
+#about-a .about-info {
+  display: grid;
+  grid-template-areas: 'bioimage bio bio' 'aw1 aw2 aw3';
+  grid-gap: 1.2rem; }
+
+#about-a .bio-image {
+  grid: bioimage; }
+
+#about-a .bio {
+  grid-area: bio;
+  border-left: 3px solid #94DDFF;
+  padding: 0.8rem; }
+
+#about-a .award-1 {
+  grid-area: aw1; }
+
+#about-a .award-2 {
+  grid-area: aw2; }
+
+#about-a .award-3 {
+  grid-area: aw3; }
+
+#about-a .award-1 .fas,
+#about-a .award-2 .fas,
+#about-a .award-3 .fas {
+  color: #94DDFF;
+  margin: 1rem; }
+
+#about-b .progress {
+  overflow: hidden;
+  height: 20px;
+  background: #bbb8bd;
+  border-radius: 8px;
+  margin-bottom: 0.5rem; }
+  #about-b .progress div {
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    background: #94DDFF; }
+
+#about-c .about-logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem; }
+
+#about-d .testimonials {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem; }
+  #about-d .testimonials ul {
+    list-style: none;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center; }
+  #about-d .testimonials p {
+    border: 1px solid #bbb8bd;
+    border-radius: 5px;
+    padding: 0.5rem; }
+  #about-d .testimonials img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 0.5rem; }
 
 #main-footer {
   background: #2c2c31;
