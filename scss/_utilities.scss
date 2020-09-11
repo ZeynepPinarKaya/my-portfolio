@@ -22,6 +22,7 @@
     }
 
     &-light{
+        margin: 0 1rem;
         @extend %btn-shared;
         color: #2c2c31;
         background: $light-color;
@@ -62,7 +63,7 @@ input[class^='btn-']:hover {
 }
 
 .lead{
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 2rem;
 }
 

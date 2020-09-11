@@ -1,5 +1,6 @@
 @import 'config';
 @import 'utilities';
+@import 'item_grid';
 
 //General Styles
 *{
@@ -82,7 +83,7 @@ img{
         //Header content
         .header-content{
             text-align: center;
-            padding-top: 15%;
+            padding-top: 20%;
 
             h1{
                 font-size: 4rem;
@@ -105,8 +106,12 @@ img{
         .specials{
             margin-top: 3rem;
             display: grid;
-            grid-gap: 1rem;
+            grid-gap: 1.2rem;
             grid-template-columns: repeat(4, 1fr);
+
+            p{
+                padding-top:1rem;
+            }
 
             .fas{
                 color: $main-color;
@@ -300,6 +305,54 @@ img{
 }
 
 
+//Contact Page 
+#contact{
+    &-a{
+        .text-fields{
+            display: grid;
+            grid-template-areas:
+            'name email'
+            'subject phone'
+            'message message';
+            grid-gap: 1.2rem;
+            margin-bottom: 1.2rem;
+
+            //Grid Areas
+            .name-input{
+                grid-area: name;
+            }
+            .subject-input{
+                grid-area: subject;
+            }
+            .email-input{
+                grid-area: email;
+            }
+            .phone-input{
+                grid-area: phone;
+            }
+            .message-input{
+                grid-area: message;
+                height: 100px;
+            }
+
+            .text-input{
+                padding: 0.5rem 1rem;
+            }
+        }
+
+        button[type='submit']{
+            width: 50%;
+        }
+    }
+
+    &-b{
+        .contact-info{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        }
+    }
+}
+
 //Footer 
 #main-footer{
     background: $dark-color;
@@ -328,3 +381,5 @@ img{
         }
     }
 }
+//Import media queries
+@import 'media';
