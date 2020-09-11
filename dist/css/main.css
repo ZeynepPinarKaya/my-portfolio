@@ -184,7 +184,8 @@ h2, h3, h4 {
   text-transform: uppercase; }
 
 img {
-  width: 100%; }
+  width: 100%; 
+}
 
 #logo {
   width: 80px;
@@ -218,7 +219,7 @@ img {
   color: #fff; }
   #header-home .header-content {
     text-align: center;
-    padding-top: 20%; }
+    padding-top: 15%; }
     #header-home .header-content h1 {
       font-size: 4rem;
       line-height: 1.5; }
@@ -294,7 +295,8 @@ img {
 
 #about-a .about-info {
   display: grid;
-  grid-template-areas: 'bioimage bio bio' 'aw1 aw2 aw3';
+  grid-template-areas: 'bioimage bio bio'
+ 'aw1 aw2 aw3';
   grid-gap: 1.2rem; }
 
 #about-a .bio-image {
@@ -358,7 +360,9 @@ img {
 
 #contact-a .text-fields {
   display: grid;
-  grid-template-areas: 'name email' 'subject phone' 'message message';
+  grid-template-areas: 'name email'
+ 'subject phone'
+ 'message message';
   grid-gap: 1.2rem;
   margin-bottom: 1.2rem; }
   #contact-a .text-fields .name-input {
@@ -393,13 +397,15 @@ img {
     align-items: center; }
     #main-footer .footer-content .social .fab {
       margin-right: 1rem;
+      color: #fff;
       border: 2px solid #fff;
       border-radius: 50%;
       height: 20px;
       width: 20px;
       line-height: 20px;
       text-align: center;
-      padding: .5rem; }
+      padding: .5rem;
+      cursor: pointer; }
       #main-footer .footer-content .social .fab:hover {
         background: #94DDFF; }
 
@@ -440,16 +446,38 @@ img {
   #home-b .stats li {
     line-height: 1.2; }
   #about-a .about-info {
-    grid-template-areas: 'bio-image' 'bio' 'aw1' 'aw2' 'aw3'; }
+    grid-template-areas: 'bio-image'
+ 'bio'
+ 'aw1'
+ 'aw2'
+ 'aw3'; }
     #about-a .about-info img {
       align-content: center; }
   #about-c {
     display: none; }
   #contact-a .text-fields {
-    grid-template-areas: 'name' 'subject' 'email' 'phone' 'message'; }
+    grid-template-areas: 'name'
+ 'subject'
+ 'email'
+ 'phone'
+ 'message'; }
   #main-footer {
     height: 7rem; }
     #main-footer .footer-content {
       flex-direction: column;
       padding: 1rem;
       height: 5rem; } }
+
+@media (max-height: 580px) {
+  #header-home .header-content {
+    padding-top: 0; }
+    #header-home .header-content h1 {
+      font-size: 3rem; } }
+
+@media (max-height: 330px) {
+  #header-home .header-content h1 {
+    font-size: 2rem; }
+  #header-home .header-content .lead {
+    font-size: 1.5rem; }
+  #header-home .header-content a {
+    font-size: 1rem; } }
