@@ -367,7 +367,9 @@ img {
  'subject phone'
  'message message';
   grid-gap: 1.2rem;
-  margin-bottom: 1.2rem; }
+  margin-bottom: 1.2rem; 
+  padding: 2px;
+}
   #contact-a .text-fields .name-input {
     grid-area: name; }
   #contact-a .text-fields .subject-input {
@@ -439,7 +441,9 @@ img {
   #home-c .process,
   #about-d .testimonials,
   .items {
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr;
+    box-shadow: none;
+  }
   .items .project-links{
     margin: 10px 0;
   }
