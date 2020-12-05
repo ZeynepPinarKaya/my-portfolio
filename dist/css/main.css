@@ -217,7 +217,7 @@ img {
       border-color: #94DDFF; }
 
 #header-home {
-  background: url("../img/showcase.jpg") no-repeat center right/cover;
+  background: url("../img/showcase.jpg") no-repeat center right/cover fixed;
   height: 100vh;
   color: #fff; }
   #header-home .header-content {
